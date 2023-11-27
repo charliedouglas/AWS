@@ -18,7 +18,7 @@ textract = boto3.client('textract', region_name='eu-west-2')
 with st.sidebar:
     # upload file to s3 bucket
     uploaded_file = st.file_uploader("Upload a file", type=["png", "jpeg", "tiff"])
-    s3_bucket_name = 'streamlit-textract-example'
+    s3_bucket_name = 'YOUR_BUCKET_NAME'
 
 
     # save uploaded file to s3 bucket
